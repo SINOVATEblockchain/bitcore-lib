@@ -10,14 +10,23 @@
 
 Bitcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Bitcoin network allows for highly resilient bitcoin infrastructure, and the developer community needs reliable, open-source tools to implement bitcoin apps and services.
 
+## Dependencies
+
+These dependencies are required:
+
+ Library     | Purpose          | Description
+ ------------|------------------|----------------------
+ node        | Utility          | v8.16.0
+
+
 ## Get Started
 
 ```sh
-npm install bitcore-lib
+npm install
 ```
 
 ```sh
-bower install bitcore-lib
+bower install
 ```
 
 ## Documentation
