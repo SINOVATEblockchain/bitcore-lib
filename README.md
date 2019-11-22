@@ -16,9 +16,18 @@ These dependencies are required:
 
  Library     | Purpose          | Description
  ------------|------------------|----------------------
- node        | Utility          | v8.16.0
+ node        | Utility          | v11.0.0
  gulp        | Utility          | build brow
 
+```sh
+npm install --global gulp-cli
+
+which gulp
+-> make sure that gulp is installed for node v11
+
+gulp
+-> test
+```
 
 ## Get Started
 
