@@ -17,6 +17,7 @@ These dependencies are required:
  Library     | Purpose          | Description
  ------------|------------------|----------------------
  node        | Utility          | v8.16.0
+ gulp        | Utility          | build brow
 
 
 ## Get Started
