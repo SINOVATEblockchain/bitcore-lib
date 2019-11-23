@@ -10,14 +10,33 @@
 
 Bitcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Bitcoin network allows for highly resilient bitcoin infrastructure, and the developer community needs reliable, open-source tools to implement bitcoin apps and services.
 
+## Dependencies
+
+These dependencies are required:
+
+ Library     | Purpose          | Description
+ ------------|------------------|----------------------
+ node        | Utility          | v11.0.0
+ gulp        | Utility          | build brow
+
+```sh
+npm install --global gulp-cli
+
+which gulp
+-> make sure that gulp is installed for node v11
+
+gulp
+-> test
+```
+
 ## Get Started
 
 ```sh
-npm install bitcore-lib
+npm install
 ```
 
 ```sh
-bower install bitcore-lib
+bower install
 ```
 
 ## Documentation
