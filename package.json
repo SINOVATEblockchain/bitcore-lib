@@ -13,10 +13,7 @@
     "pub": "npm run build && npm publish"
   },
   "contributors": [
-    {
-      "name": "crptec",
-      "email": "crptec.fr@gmail.com"
-    }
+    "crptec <crptec.fr@gmail.com>"
   ],
   "keywords": [
     "bitcoin",
@@ -36,7 +33,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/crptec/bitcore-lib-sin"
+    "url": "git+https://github.com/crptec/bitcore-lib-sin.git"
   },
   "browser": {
     "request": "browser-request"
@@ -44,20 +41,32 @@
   "dependencies": {
     "bech32": "=1.1.3",
     "bn.js": "=4.11.8",
+    "bower": "^1.8.8",
     "bs58": "^4.0.1",
     "buffer-compare": "=1.1.1",
+    "core-util-is": "^1.0.2",
+    "del": "^5.1.0",
     "elliptic": "=6.4.0",
     "inherits": "=2.0.1",
     "lodash": "=4.17.15",
-    "node-x25x": "https://github.com/SINOVATEblockchain/node-x25x.git"
+    "node-x25x": "git+https://github.com/SINOVATEblockchain/node-x25x.git"
   },
   "devDependencies": {
     "bitcore-build": "^8.11.1",
     "brfs": "^2.0.1",
     "chai": "^4.2.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-util": "^3.0.8",
     "sinon": "^7.1.1"
   },
   "license": "MIT",
-  "gitHead": "012cc0216a9bc6b195035855bd17149bad41acd1"
+  "bugs": {
+    "url": "https://github.com/crptec/bitcore-lib-sin/issues"
+  },
+  "homepage": "https://github.com/crptec/bitcore-lib-sin#readme",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  }
 }
