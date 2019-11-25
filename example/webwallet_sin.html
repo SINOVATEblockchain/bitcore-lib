@@ -1,0 +1,38 @@
+<html lang="en-US">
+<head>
+    <title>SINOVATE - Web clientside example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="xtdevcoin">
+    <meta name="description" content="Tools for Blockchain">
+    <script src="./bitcore-lib.min.js" type="text/javascript"></script>
+    <script src="./jquery-3.2.1.js" type="text/javascript"></script>
+</head>
+<body>
+    Address: <div id="address"></div>
+    Raw Transaction: <div id="rawtx"></div>
+    Transaction ID: <div id="txid"></div>
+    <script type="text/javascript">
+      var bitcore = require('bitcore-lib');
+      var privateKey = new bitcore.PrivateKey('VMg5hP9b6HTbQ8D4PeukRYpwHi6gs7LMkzTr7QGtUxtvHHhUQN9S');
+      var address = privateKey.toAddress();
+      /*SQsrMpzRq5yhj6Gbjw7gWAbUBS3ztn68z1*/
+      $('#address').html(address.toString());
+      var utxo = {
+        "txId" : "3e38b381af008b83a901aa6fb9b6378b086657f823c151e100c246c6cd5f1efd",
+        "outputIndex" : 1,
+        "address" : "SQsrMpzRq5yhj6Gbjw7gWAbUBS3ztn68z1",
+        "script" : "76a914274f47ce32ce0a16493720bb07e110e7fbc4dd2488ac",
+        "satoshis" : 151114573
+      };
+      var transaction = new bitcore.Transaction()
+        .from(utxo)
+        .to('SRGYtLjd1659h3cDm1djg42833sVmgpGX9', 100000000)
+        .fee(15000000)
+        .change('SQsrMpzRq5yhj6Gbjw7gWAbUBS3ztn68z1')
+        .sign(privateKey);
+      $('#rawtx').html(transaction.toString());
+      $('#txid').html('25b085dc27bfaf1631273d421c692777b27a78312413faf98b7db5444de39c4e');
+    </script>
+</body>
+</html>
