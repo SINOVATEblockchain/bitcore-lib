@@ -15,9 +15,9 @@ var MultiSigScriptHashInput = bitcore.Transaction.Input.MultiSigScriptHash;
 
 describe('MultiSigScriptHashInput', function() {
 
-  var privateKey1 = new PrivateKey('KwF9LjRraetZuEjR8VqEq539z137LW5anYDUnVK11vM3mNMHTWb4');
-  var privateKey2 = new PrivateKey('L4PqnaPTCkYhAqH3YQmefjxQP6zRcF4EJbdGqR8v6adtG9XSsadY');
-  var privateKey3 = new PrivateKey('L4CTX79zFeksZTyyoFuPQAySfmP7fL3R41gWKTuepuN7hxuNuJwV');
+  var privateKey1 = new PrivateKey('7QrPdrWFBxePdJcV9vpyZAikkSvx4zHPAA1nNwHNut5381bEPAi');
+  var privateKey2 = new PrivateKey('7RWpMedyfmEexQaXUYMCxp1nXMmFjSDPCVj8AjpsfkeV81GCmmV');
+  var privateKey3 = new PrivateKey('7S2ZbWu7Mu2AvRT6UCn8kYgrsShrFCEeSuRVPhH8GrKQeVjKpnV');
   var public1 = privateKey1.publicKey;
   var public2 = privateKey2.publicKey;
   var public3 = privateKey3.publicKey;

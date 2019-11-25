@@ -47,8 +47,8 @@ describe('PublicKey', function() {
   describe('instantiation', function() {
 
     it('from a private key', function() {
-      var privhex = '906977a061af29276e40bf377042ffbde414e496ae2260bbf1fa9d085637bfff';
-      var pubhex = '02a1633cafcc01ebfb6d78e39f687a1f0995c62fc95f51ead10a02ee0be551b5dc';
+      var privhex = '4B65E37D750454B0B05942A05983FD36D57CE20AFAD5F4CEDAE4BCCBF5D48F6E';
+      var pubhex = '0330812D7DB74CA325312E4366D68F27D165DF51FF70CFBB02661723157F3A8E8A';
       var privkey = new PrivateKey(new BN(Buffer.from(privhex, 'hex')));
       var pk = new PublicKey(privkey);
       pk.toString().should.equal(pubhex);
@@ -58,18 +58,11 @@ describe('PublicKey', function() {
 
       var knownKeys = [
         {
-          wif: 'KzsjKq2FVqVuQv2ueHVFuB65A9uEZ6S1L6F8NuokCrE3V3kE3Ack',
-          priv: '6d1229a6b24c2e775c062870ad26bc261051e0198c67203167273c7c62538846',
-          pub: '03d6106302d2698d6a41e9c9a114269e7be7c6a0081317de444bb2980bf9265a01',
+          wif: 'VJGzufW5dNc2sEjdGQakcyuJ6mT84bqJoQnTHpbHiQQpMwgrnY3a',
+          priv: '4B65E37D750454B0B05942A05983FD36D57CE20AFAD5F4CEDAE4BCCBF5D48F6E',
+          pub: '0330812D7DB74CA325312E4366D68F27D165DF51FF70CFBB02661723157F3A8E8A',
           pubx: 'd6106302d2698d6a41e9c9a114269e7be7c6a0081317de444bb2980bf9265a01',
           puby: 'e05fb262e64b108991a29979809fcef9d3e70cafceb3248c922c17d83d66bc9d'
-        },
-        {
-          wif: 'L5MgSwNB2R76xBGorofRSTuQFd1bm3hQMFVf3u2CneFom8u1Yt7G',
-          priv: 'f2cc9d2b008927db94b89e04e2f6e70c180e547b3e5e564b06b8215d1c264b53',
-          pub: '03e275faa35bd1e88f5df6e8f9f6edb93bdf1d65f4915efc79fd7a726ec0c21700',
-          pubx: 'e275faa35bd1e88f5df6e8f9f6edb93bdf1d65f4915efc79fd7a726ec0c21700',
-          puby: '367216cb35b086e6686d69dddd822a8f4d52eb82ac5d9de18fdcd9bf44fa7df7'
         }
       ];
 
@@ -84,20 +77,20 @@ describe('PublicKey', function() {
     });
 
     it('from a compressed public key', function() {
-      var publicKeyHex = '031ff0fe0f7b15ffaa85ff9f4744d539139c252a49710fb053bb9f2b933173ff9a';
+      var publicKeyHex = '0330812D7DB74CA325312E4366D68F27D165DF51FF70CFBB02661723157F3A8E8A';
       var publicKey = new PublicKey(publicKeyHex);
       publicKey.toString().should.equal(publicKeyHex);
     });
 
     it('from another publicKey', function() {
-      var publicKeyHex = '031ff0fe0f7b15ffaa85ff9f4744d539139c252a49710fb053bb9f2b933173ff9a';
+      var publicKeyHex = '0330812D7DB74CA325312E4366D68F27D165DF51FF70CFBB02661723157F3A8E8A';
       var publicKey = new PublicKey(publicKeyHex);
       var publicKey2 = new PublicKey(publicKey);
       publicKey.should.equal(publicKey2);
     });
 
     it('sets the network to defaultNetwork if none provided', function() {
-      var publicKeyHex = '031ff0fe0f7b15ffaa85ff9f4744d539139c252a49710fb053bb9f2b933173ff9a';
+      var publicKeyHex = '0330812D7DB74CA325312E4366D68F27D165DF51FF70CFBB02661723157F3A8E8A';
       var publicKey = new PublicKey(publicKeyHex);
       publicKey.network.should.equal(Networks.defaultNetwork);
     });
@@ -353,10 +346,7 @@ describe('PublicKey', function() {
     // wif private key, address
     // see: https://github.com/bitcoin/bitcoin/blob/master/src/test/key_tests.cpp#L20
     var data = [
-      ['5HxWvvfubhXpYYpS3tJkw6fq9jE9j18THftkZjHHfmFiWtmAbrj', '1QFqqMUD55ZV3PJEJZtaKCsQmjLT6JkjvJ'],
-      ['5KC4ejrDjv152FGwP386VD1i2NYc5KkfSMyv1nGy1VGDxGHqVY3', '1F5y5E5FMc5YzdJtB9hLaUe43GDxEKXENJ'],
-      ['Kwr371tjA9u2rFSMZjTNun2PXXP3WPZu2afRHTcta6KxEUdm1vEw', '1NoJrossxPBKfCHuJXT4HadJrXRE9Fxiqs'],
-      ['L3Hq7a8FEQwJkW1M2GNKDW28546Vp5miewcCzSqUD9kCAXrJdS3g', '1CRj2HyM1CXWzHAXLQtiGLyggNT9WQqsDs']
+      ['7QrPdrWFBxePdJcV9vpyZAikkSvx4zHPAA1nNwHNut5381bEPAi', 'SgcKGWqj9cCTeerKroJVGGyvwssUKYiSrB'],
     ];
     
     data.forEach(function(d){

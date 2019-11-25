@@ -52,7 +52,7 @@
     "node-x25x": "git+https://github.com/SINOVATEblockchain/node-x25x.git"
   },
   "devDependencies": {
-    "bitcore-build": "^8.11.1",
+    "bitcore-build-sin": "git+https://github.com/crptec/bitcore-build-sin.git",
     "brfs": "^2.0.1",
     "chai": "^4.2.0",
     "gulp": "^4.0.2",

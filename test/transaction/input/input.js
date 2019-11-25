@@ -14,12 +14,12 @@ var Input = bitcore.Transaction.Input;
 
 describe('Transaction.Input', function() {
 
-  var privateKey = new PrivateKey('KwF9LjRraetZuEjR8VqEq539z137LW5anYDUnVK11vM3mNMHTWb4');
+  var privateKey = new PrivateKey('VMg5hP9b6HTbQ8D4PeukRYpwHi6gs7LMkzTr7QGtUxtvHHhUQN9S');
   var publicKey = privateKey.publicKey;
   var address = new Address(publicKey, Networks.livenet);
   var output = {
-    address: '33zbk2aSZYdNbRsMPPt6jgy6Kq1kQreqeb',
-    prevTxId: '66e64ef8a3b384164b78453fa8c8194de9a473ba14f89485a0e433699daec140',
+    address: 'SQsrMpzRq5yhj6Gbjw7gWAbUBS3ztn68z1',
+    prevTxId: '597b7da8048da900223beab09d914914b4e6de2775be4b575da80a2f9bd17686',
     outputIndex: 0,
     script: new Script(address),
     satoshis: 1000000
