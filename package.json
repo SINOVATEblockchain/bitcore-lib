@@ -48,8 +48,7 @@
     "del": "^5.1.0",
     "elliptic": "=6.4.0",
     "inherits": "=2.0.1",
-    "lodash": "=4.17.15",
-    "node-x25x": "git+https://github.com/SINOVATEblockchain/node-x25x.git"
+    "lodash": "=4.17.15"
   },
   "devDependencies": {
     "bitcore-build-sin": "git+https://github.com/crptec/bitcore-build-sin.git",
