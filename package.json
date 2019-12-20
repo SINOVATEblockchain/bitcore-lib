@@ -52,6 +52,7 @@
   },
   "devDependencies": {
     "bitcore-build-sin": "git+https://github.com/crptec/bitcore-build-sin.git",
+	"cryto-js": "git+https://github.com/brix/crypto-js",
     "brfs": "^2.0.1",
     "chai": "^4.2.0",
     "gulp": "^4.0.2",
