@@ -19,6 +19,7 @@ global._bitcore = bitcore.version;
 bitcore.crypto = {};
 bitcore.crypto.BN = require('./lib/crypto/bn');
 bitcore.crypto.ECDSA = require('./lib/crypto/ecdsa');
+bitcore.crypto.ECDH = require('./lib/crypto/ecdh');
 bitcore.crypto.Hash = require('./lib/crypto/hash');
 bitcore.crypto.Random = require('./lib/crypto/random');
 bitcore.crypto.Point = require('./lib/crypto/point');
